@@ -1,8 +1,8 @@
 module full_adder (output reg Sum,
-	           output reg Cout,
-		   input  wire A,
-		   input  wire B,
-		   input  wire Cin);
+	           	   output reg Cout,
+		   		   input  wire A,
+		   		   input  wire B,
+		   		   input  wire Cin);
 
 // Sum = A XOR B XOR Cin
 assign Sum  = A ^ B ^ Cin;

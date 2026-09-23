@@ -63,10 +63,9 @@ module Lab1_2_tb;
     end
 
     // Print signal values
-    initial begin
-        $monitor(
-            "Time=%0t RESET=%b LOAD=%b ADD=%b DIN=%0d CLKCNT=%0d SUM=%0d", $time, RESET, LOAD, ADD, DIN, CLKCNT, SUM);
-   
- end
+    initial 
+        begin
+        $monitor("Time=%0t RESET=%b LOAD=%b ADD=%b DIN=%0d CLKCNT=%0d SUM=%0d", $time, RESET, LOAD, ADD, DIN, CLKCNT, SUM);
+        end
 
 endmodule
