@@ -1,0 +1,5 @@
+always@ (posedge clock)
+
+	regA[3:0] <= 1'b1 << 3;
+
+On each positive edge of the clock, the value 1 is shifted left by 3 bit positions and loaded into the 4-bit register regA. Therefore, regA becomes 4'b1000.
