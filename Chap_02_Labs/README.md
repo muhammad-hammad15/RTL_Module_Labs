@@ -9,13 +9,13 @@ The labs provide hands-on practice with `always` blocks, conditional statements,
 ## 📚 Labs Overview
 
 | Lab     | Topic                         | Design Type   | Main Concepts                                   |
-| ------- | ----------------------------- | ------------- | ----------------------------------------------- |
-| Lab 2.3 | 8-bit Comparator              | Combinational | `if-else`, comparison operators                 |
-| Lab 2.4 | 8-bit Register / Control Unit | Sequential    | `case`, clocked logic, load/increment/decrement |
-| Lab 2.5 | Division by 3                 | Combinational | `while` loop, iterative subtraction             |
-| Lab 2.6 | Pattern Counter               | Combinational | `for` loop, pattern detection                   |
-| Lab 2.7 | 8-bit Shift Register          | Sequential    | Load, shift left, shift right                   |
-| Lab 2.8 | 8:1 Multiplexer               | Combinational | Nested ternary operators                        |
+| ---------- | ----------------------------- | ------------- | ----------------------------------------------- |
+| Lab 2.3    | 8-bit Comparator              | Combinational | `if-else`, comparison operators                 |
+| Lab 2.4    | 8-bit Register / Control Unit | Sequential    | `case`, clocked logic, load/increment/decrement |
+| Lab 2.5    | Division by 3                 | Combinational | `while` loop, iterative subtraction             |
+| Lab 2.6(a) | Pattern Counter               | Combinational | `for` loop, pattern detection                   |
+| Lab 2.6(b) | 8-bit Shift Register          | Sequential    | Load, shift left, shift right                   |
+| Lab 2.8 | 8:1 Multiplexer                  | Combinational | Nested ternary operators                        |
 
 ---
 
@@ -240,7 +240,7 @@ Lab_2_5.vcd
 
 ---
 
-# 🔹 Lab 2.6 – 010 Pattern Counter
+# 🔹 Lab 2.6(a) – 010 Pattern Counter
 
 ### Description
 
@@ -295,8 +295,8 @@ for each valid position in the 32-bit input.
 ### Files
 
 ```text
-Lab_2_6.v
-Lab_2_6_tb.v
+Lab_2_6(a).v
+Lab_2_6(a)_tb.v
 ```
 
 ### Verification
@@ -317,7 +317,7 @@ Lab_2_6.vcd
 
 ---
 
-# 🔹 Lab 2.7 – 8-bit Shift Register
+# 🔹 Lab 2.6(b) – 8-bit Shift Register
 
 ### Description
 
@@ -400,9 +400,8 @@ A right shift produces:
 ### Files
 
 ```text
-Lab_2_7.v
-Lab_2_7_tb.v
-Lab_2_7_Description.txt
+Lab_2_6(b).v
+Lab_2_6(b)_tb.v
 ```
 
 ### Verification
@@ -501,11 +500,12 @@ Chap-02_Labs/
 ├── Lab_2_5.v
 ├── Lab_2_5_tb.v
 │
-├── Lab_2_6.v
-├── Lab_2_6_tb.v
+├── Lab_2_6(a).v
+├── Lab_2_6(a)_tb.v
 │
-├── Lab_2_7.v
-├── Lab_2_7_tb.v
+├── Lab_2_6(b).v
+├── Lab_2_6(b)_tb.v
+|
 ├── Lab_2_7_Description.txt
 │
 ├── Lab_2_8.v
@@ -552,19 +552,19 @@ vvp Lab2_5_sim
 gtkwave Lab_2_5.vcd
 ```
 
-## Lab 2.6
+## Lab 2.6(a)
 
 ```bash
-iverilog -o Lab2_6_sim Lab_2_6.v Lab_2_6_tb.v
-vvp Lab2_6_sim
+iverilog -o Lab2_6(a)_sim Lab_2_6(a).v Lab_2_6(a)_tb.v
+vvp Lab2_6(a)_sim
 gtkwave Lab_2_6.vcd
 ```
 
-## Lab 2.7
+## Lab 2.6(b)
 
 ```bash
-iverilog -o Lab2_7_sim Lab_2_7.v Lab_2_7_tb.v
-vvp Lab2_7_sim
+iverilog -o Lab2_6(b)_sim Lab_2_6(b).v Lab_2_6(b)_tb.v
+vvp Lab2_6(b)_sim
 gtkwave Shifter_8_bit.vcd
 ```
 
