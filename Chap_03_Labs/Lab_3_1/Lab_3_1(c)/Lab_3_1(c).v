@@ -1,13 +1,13 @@
 module Mux_8to1 (output [4:0] dout,
-				input  [2:0] sel,
-				input  [4:0] a0,
-				input  [4:0] a1,
-				input  [4:0] a2,
-				input  [4:0] a3,
-				input  [4:0] a4,
-				input  [4:0] a5,
-				input  [4:0] a6,
-				input  [4:0] a7
+				 input  [2:0] sel,
+				 input  [4:0] a0,
+				 input  [4:0] a1,
+				 input  [4:0] a2,
+				 input  [4:0] a3,
+				 input  [4:0] a4,
+				 input  [4:0] a5,
+				 input  [4:0] a6,
+				 input  [4:0] a7
 				);
 
 // Ternary Operator Mux_8to1 Implementation
